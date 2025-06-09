@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values":[
+    "landosmod:lingite_ore_blue",
+    "landosmod:lingite_ore_green",
+    "landosmod:lingite_ore_purple",
+    "landosmod:steel_block"
+  ]
+}

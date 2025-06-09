@@ -1,8 +1,10 @@
 package net.paret.landosmod.block;
 
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -20,16 +22,16 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> STEEL_BLOCK = registerBlock("steel_block",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .sound(SoundType.STONE).strength(4f, 4)));
+                    .sound(SoundType.STONE).strength(2f, 4).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> LINGITE_BLUE = registerBlock("lingite_ore_blue",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .sound(SoundType.STONE).strength(4f, 4)));
+            () -> new DropExperienceBlock(UniformInt.of(2, 4), BlockBehaviour.Properties.of()
+                    .sound(SoundType.STONE).strength(2f, 4).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> LINGITE_GREEN = registerBlock("lingite_ore_green",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .sound(SoundType.STONE).strength(4f, 4)));
+            () -> new DropExperienceBlock(UniformInt.of(2, 4), BlockBehaviour.Properties.of()
+                    .sound(SoundType.STONE).strength(2f, 4).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> LINGITE_PURPLE = registerBlock("lingite_ore_purple",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .sound(SoundType.STONE).strength(4f, 4)));
+            () -> new DropExperienceBlock(UniformInt.of(2, 4), BlockBehaviour.Properties.of()
+                    .sound(SoundType.STONE).strength(2f, 4).requiresCorrectToolForDrops()));
 
     public static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
