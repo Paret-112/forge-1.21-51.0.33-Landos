@@ -54,6 +54,7 @@ public class LandosMod {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.STEELINGOT);
             event.accept(ModItems.STEELUNFIRED);
+            event.accept(ModItems.COKE);
         }
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.STEEL_BLOCK);

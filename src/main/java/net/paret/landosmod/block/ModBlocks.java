@@ -21,6 +21,15 @@ public class ModBlocks {
     public static final RegistryObject<Block> STEEL_BLOCK = registerBlock("steel_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .sound(SoundType.STONE).strength(4f, 4)));
+    public static final RegistryObject<Block> LINGITE_BLUE = registerBlock("lingite_ore_blue",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .sound(SoundType.STONE).strength(4f, 4)));
+    public static final RegistryObject<Block> LINGITE_GREEN = registerBlock("lingite_ore_green",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .sound(SoundType.STONE).strength(4f, 4)));
+    public static final RegistryObject<Block> LINGITE_PURPLE = registerBlock("lingite_ore_purple",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .sound(SoundType.STONE).strength(4f, 4)));
 
     public static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

@@ -1,6 +1,7 @@
 package net.paret.landosmod.item;
 
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Rarity;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -15,6 +16,15 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item>  STEELUNFIRED = ITEMS.register( "steel_unfired",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> COKE = ITEMS.register("coke",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> LINGITE_BLUE = ITEMS.register("lingite_gem_blue",
+            () -> new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
+    public static final RegistryObject<Item> LINGITE_GREEN = ITEMS.register("lingite_gem_green",
+            () -> new Item(new Item.Properties().rarity(Rarity.RARE)));
+    public static final RegistryObject<Item> LINGITE_PURPLE = ITEMS.register("lingite_gem_purple",
+            () -> new Item(new Item.Properties().rarity(Rarity.EPIC)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

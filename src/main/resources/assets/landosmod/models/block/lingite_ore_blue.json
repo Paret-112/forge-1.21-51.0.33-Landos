@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "landosmod:block/lingite_ore_blue"
+  }
+}

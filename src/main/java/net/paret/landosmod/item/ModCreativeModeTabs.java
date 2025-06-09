@@ -15,12 +15,16 @@ public class ModCreativeModeTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, LandosMod.MOD_ID);
 
     public static final RegistryObject<CreativeModeTab> LANDOSMOD_TAB = CREATIVE_MODE_TABS.register("landos_mod_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.STEEL_BLOCK.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.LINGITE_BLUE.get()))
                     .title(Component.translatable("creativetab.landosmod.landosmodtab"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModBlocks.STEEL_BLOCK.get());
-                        output.accept(ModItems.STEELINGOT.get());
-                        output.accept(ModItems.STEELUNFIRED.get());
+                        output.accept(ModItems.LINGITE_BLUE.get());
+                        output.accept(ModItems.LINGITE_GREEN.get());
+                        output.accept(ModItems.LINGITE_PURPLE.get());
+
+                        output.accept(ModBlocks.LINGITE_BLUE.get());
+                        output.accept(ModBlocks.LINGITE_GREEN.get());
+                        output.accept(ModBlocks.LINGITE_PURPLE.get());
                     }).build()
     );
 

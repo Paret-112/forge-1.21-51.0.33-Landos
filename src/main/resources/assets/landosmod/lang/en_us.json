@@ -1,8 +1,17 @@
 {
   "item.landosmod.steel_ingot": "Steel Ingot",
   "item.landosmod.steel_unfired": "Unfired Steel",
+  "item.landosmod.coke": "Coke",
+
+  "item.landosmod.lingite_gem_blue": "Blue Lingite Gem",
+  "item.landosmod.lingite_gem_green": "Green Lingite Gem",
+  "item.landosmod.lingite_gem_purple": "Purple Lingite Gem",
 
   "block.landosmod.steel_block": "Steel Block",
+
+  "block.landosmod.lingite_ore_blue": "Blue Lingite Ore",
+  "block.landosmod.lingite_ore_green": "Green Lingite Ore",
+  "block.landosmod.lingite_ore_purple": "Purple Lingite Ore",
 
   "creativetab.landosmod.landosmodtab": "Landos Mod"
 }
