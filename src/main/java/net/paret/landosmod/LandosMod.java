@@ -17,6 +17,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.paret.landosmod.block.ModBlocks;
 import net.paret.landosmod.item.ModCreativeModeTabs;
 import net.paret.landosmod.item.ModItems;
+import org.checkerframework.checker.units.qual.C;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -58,6 +59,9 @@ public class LandosMod {
         }
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.STEEL_BLOCK);
+        }
+        if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+            event.accept(ModItems.WOOD_SAW);
         }
     }
 

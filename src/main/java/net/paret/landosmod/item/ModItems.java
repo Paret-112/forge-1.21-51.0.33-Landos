@@ -7,6 +7,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.paret.landosmod.LandosMod;
+import net.paret.landosmod.item.custom.SawItem;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -18,6 +19,9 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> COKE = ITEMS.register("coke",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> WOOD_SAW = ITEMS.register("wood_saw",
+            () -> new SawItem(new Item.Properties().durability(128)));
 
     public static final RegistryObject<Item> LINGITE_BLUE = ITEMS.register("lingite_gem_blue",
             () -> new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
