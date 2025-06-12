@@ -12,6 +12,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.paret.landosmod.LandosMod;
+import net.paret.landosmod.block.custom.AltarBlock;
 import net.paret.landosmod.item.ModItems;
 
 import java.util.function.Supplier;
@@ -32,6 +33,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> LINGITE_PURPLE = registerBlock("lingite_ore_purple",
             () -> new DropExperienceBlock(UniformInt.of(2, 4), BlockBehaviour.Properties.of()
                     .sound(SoundType.STONE).strength(2f, 4).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> ALTAR_BLOCK = registerBlock("altar_block",
+            () -> new AltarBlock(BlockBehaviour.Properties.of().strength(1f)));
 
     public static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

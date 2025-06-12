@@ -25,6 +25,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.LINGITE_BLUE.get());
                         output.accept(ModBlocks.LINGITE_GREEN.get());
                         output.accept(ModBlocks.LINGITE_PURPLE.get());
+
+                        output.accept(ModBlocks.ALTAR_BLOCK.get());
                     }).build()
     );
 
