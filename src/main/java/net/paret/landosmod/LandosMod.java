@@ -63,6 +63,10 @@ public class LandosMod {
         if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
             event.accept(ModItems.WOOD_SAW);
         }
+        if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+            event.accept(ModItems.BEAN);
+            event.accept(ModItems.BEAN_SOUP);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
