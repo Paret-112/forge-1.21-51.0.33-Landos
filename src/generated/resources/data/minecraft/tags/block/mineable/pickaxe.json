@@ -1,6 +1,6 @@
 {
-  "replace": false,
-  "values":[
+  "values": [
+    "landosmod:steel_block",
     "landosmod:lingite_ore_blue",
     "landosmod:lingite_ore_green",
     "landosmod:lingite_ore_purple"
