@@ -27,6 +27,20 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.LINGITE_PURPLE.get());
 
                         output.accept(ModBlocks.ALTAR_BLOCK.get());
+
+                        output.accept(ModBlocks.JUNIPER_PLANKS.get());
+                        output.accept(ModBlocks.JUNIPER_SLAB.get());
+                        output.accept(ModBlocks.JUNIPER_STAIRS.get());
+
+                        output.accept(ModBlocks.JUNIPER_BUTTON.get());
+                        output.accept(ModBlocks.JUNIPER_PRESSURE_PLATE.get());
+
+                        output.accept(ModBlocks.JUNIPER_FENCE.get());
+                        output.accept(ModBlocks.JUNIPER_FENCE_GATE.get());
+                        output.accept(ModBlocks.JUNIPER_WALL.get());
+
+                        output.accept(ModBlocks.JUNIPER_DOOR.get());
+                        output.accept(ModBlocks.JUNIPER_TRAPDOOR.get());
                     }).build()
     );
 

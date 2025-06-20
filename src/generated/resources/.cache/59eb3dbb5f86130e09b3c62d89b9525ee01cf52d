@@ -1,5 +1,15 @@
-// 1.21	2025-06-17T15:45:07.1212965	Loot Tables
+// 1.21	2025-06-20T11:58:22.1842886	Loot Tables
 093f5932ae7f8363b26f680d80ceb86650c5b5ca data/landosmod/loot_table/blocks/altar_block.json
+9836369c3cec229a8c2887a4999e64ca01905c39 data/landosmod/loot_table/blocks/juniper_button.json
+2e63278cbc8044e71b948d323b679c0e9b85946a data/landosmod/loot_table/blocks/juniper_door.json
+57a2dca8482c964bfc1a9716445d6923f63e5e7d data/landosmod/loot_table/blocks/juniper_fence.json
+f7b1dd4bde29846c043388b621810ebbbf164f5a data/landosmod/loot_table/blocks/juniper_fence_gate.json
+49a276972a5b287293b8404d229da529daf3de70 data/landosmod/loot_table/blocks/juniper_planks.json
+f8c591db806e6d7a08c6f3798cdf8532f77c6735 data/landosmod/loot_table/blocks/juniper_pressure_plate.json
+ab13c4de4fcf77c398c88c03063c83c698eb2646 data/landosmod/loot_table/blocks/juniper_slab.json
+fa626b38888482493cd977a5e70fba443ae8dadd data/landosmod/loot_table/blocks/juniper_stairs.json
+a9e0cabcbcf3c067206627365423db7a55119728 data/landosmod/loot_table/blocks/juniper_trapdoor.json
+3a1493d1d9503c8927a47f5eb0babe84ddc16885 data/landosmod/loot_table/blocks/juniper_wall.json
 333dc1763a2fe7f29906bd35bd56a0c01213a882 data/landosmod/loot_table/blocks/lingite_ore_blue.json
 faa632eedd938124bceea369143ed79305c5d32c data/landosmod/loot_table/blocks/lingite_ore_green.json
 b5f1fe2356ee14f44f6f33a2e49f23d90c9a820f data/landosmod/loot_table/blocks/lingite_ore_purple.json

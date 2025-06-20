@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "landosmod:block/juniper_planks",
+    "side": "landosmod:block/juniper_planks",
+    "top": "landosmod:block/juniper_planks"
+  }
+}

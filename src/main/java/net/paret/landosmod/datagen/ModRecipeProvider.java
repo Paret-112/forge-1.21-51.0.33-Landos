@@ -34,6 +34,24 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         oreSmelting(pRecipeOutput, STEEL_SMELTABLE, RecipeCategory.MISC, ModItems.STEELINGOT.get(), 0.5f, 200, "steel");
         oreBlasting(pRecipeOutput, STEEL_SMELTABLE, RecipeCategory.MISC, ModItems.STEELINGOT.get(), 0.5f, 100, "steel");
+
+        stairBuilder(ModBlocks.JUNIPER_STAIRS.get(), Ingredient.of(ModBlocks.JUNIPER_PLANKS.get())).group("juniper")
+                .unlockedBy(getHasName(ModBlocks.JUNIPER_PLANKS.get()), has(ModBlocks.JUNIPER_PLANKS.get())).save(pRecipeOutput);
+        slab(pRecipeOutput, RecipeCategory.MISC, ModBlocks.JUNIPER_SLAB.get(), ModBlocks.JUNIPER_PLANKS.get());
+        buttonBuilder(ModBlocks.JUNIPER_BUTTON.get(), Ingredient.of(ModBlocks.JUNIPER_PLANKS.get())).group("juniper")
+                .unlockedBy(getHasName(ModBlocks.JUNIPER_PLANKS.get()), has(ModBlocks.JUNIPER_PLANKS.get())).save(pRecipeOutput);
+        pressurePlate(pRecipeOutput, ModBlocks.JUNIPER_PRESSURE_PLATE.get(),ModBlocks.JUNIPER_PLANKS.get());
+        fenceBuilder(ModBlocks.JUNIPER_FENCE.get(), Ingredient.of(ModBlocks.JUNIPER_PLANKS.get())).group("juniper")
+                .unlockedBy(getHasName(ModBlocks.JUNIPER_PLANKS.get()), has(ModBlocks.JUNIPER_PLANKS.get())).save(pRecipeOutput);
+        fenceGateBuilder(ModBlocks.JUNIPER_FENCE_GATE.get(), Ingredient.of(ModBlocks.JUNIPER_PLANKS.get())).group("juniper")
+                .unlockedBy(getHasName(ModBlocks.JUNIPER_PLANKS.get()), has(ModBlocks.JUNIPER_PLANKS.get())).save(pRecipeOutput);
+        wall(pRecipeOutput, RecipeCategory.MISC, ModBlocks.JUNIPER_WALL.get(), ModBlocks.JUNIPER_PLANKS.get());
+        doorBuilder(ModBlocks.JUNIPER_DOOR.get(), Ingredient.of(ModBlocks.JUNIPER_PLANKS.get())).group("juniper")
+                .unlockedBy(getHasName(ModBlocks.JUNIPER_PLANKS.get()), has(ModBlocks.JUNIPER_PLANKS.get())).save(pRecipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.JUNIPER_TRAPDOOR.get()).pattern("***").pattern("**").define('*', ModBlocks.JUNIPER_PLANKS.get()).save(pRecipeOutput);
+
+        //trapdoorBuilder(ModBlocks.JUNIPER_TRAPDOOR.get(), Ingredient.of(ModBlocks.JUNIPER_PLANKS.get())).group("juniper")
+        //      .unlockedBy(getHasName(ModBlocks.JUNIPER_PLANKS.get()), has(ModBlocks.JUNIPER_PLANKS.get())).save(pRecipeOutput);
     }
     protected static void oreSmelting(RecipeOutput recipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult,
                                       float pExperience, int pCookingTIme, String pGroup) {

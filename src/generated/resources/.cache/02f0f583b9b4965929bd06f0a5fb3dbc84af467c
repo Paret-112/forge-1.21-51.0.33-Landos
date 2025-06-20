@@ -1,4 +1,7 @@
-// 1.21	2025-06-17T15:45:07.1256327	Tags for minecraft:block mod id landosmod
+// 1.21	2025-06-19T13:11:51.9072271	Tags for minecraft:block mod id landosmod
+8c902cd88dec4d2e86ff6423c794cff6a560d1ae data/minecraft/tags/block/fence_gates.json
 016a5c8ebc9c1c765e463094f74c43920ce200c2 data/minecraft/tags/block/mineable/pickaxe.json
 2b62f40d7361768827a8ccd4f51ddbbd7e9c2552 data/minecraft/tags/block/needs_diamond_tool.json
 69baa2fa9943bf3834e6ce3c5f92441b5b8510c0 data/minecraft/tags/block/needs_iron_tool.json
+8898ac9f1f29b0d6d0482a0b1bd541114c237b54 data/minecraft/tags/block/walls.json
+d0d0b1f89a135f10363e8a9ab66e25d48d3aee0c data/minecraft/tags/block/wooden_fences.json

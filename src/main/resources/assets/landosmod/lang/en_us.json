@@ -13,6 +13,21 @@
 
   "block.landosmod.steel_block": "Steel Block",
 
+  "block.landosmod.juniper_planks":  "Juniper Planks",
+  "block.landosmod.juniper_stairs": "Juniper Stairs",
+  "block.landosmod.juniper_slab": "Juniper Slab",
+
+  "block.landosmod.juniper_pressure_plate": "Juniper Pressure Plate",
+  "block.landosmod.juniper_button": "Juniper Button",
+
+  "block.landosmod.juniper_fence": "Juniper Fence",
+  "block.landosmod.juniper_fence_gate": "Juniper Fence Gate",
+  "block.landosmod.juniper_wall": "Juniper Wall",
+
+  "block.landosmod.juniper_door": "Juniper Door",
+  "block.landosmod.juniper_trapdoor": "Juniper Trapdoor",
+
+
   "block.landosmod.altar_block": "Altar Block",
 
   "block.landosmod.lingite_ore_blue": "Blue Lingite Ore",

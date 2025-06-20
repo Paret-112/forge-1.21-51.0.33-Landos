@@ -33,6 +33,22 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.STEEL_BLOCK.get());
         dropSelf(ModBlocks.ALTAR_BLOCK.get());
 
+        dropSelf(ModBlocks.JUNIPER_PLANKS.get());
+        dropSelf(ModBlocks.JUNIPER_STAIRS.get());
+        this.add(ModBlocks.JUNIPER_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.JUNIPER_SLAB.get()));
+
+        dropSelf(ModBlocks.JUNIPER_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.JUNIPER_BUTTON.get());
+
+        dropSelf(ModBlocks.JUNIPER_FENCE.get());
+        dropSelf(ModBlocks.JUNIPER_FENCE_GATE.get());
+        dropSelf(ModBlocks.JUNIPER_WALL.get());
+
+        dropSelf(ModBlocks.JUNIPER_TRAPDOOR.get());
+        this.add(ModBlocks.JUNIPER_DOOR.get(),
+                block -> createDoorTable(ModBlocks.JUNIPER_DOOR.get()));
+
         this.add(ModBlocks.LINGITE_BLUE.get(),
                 block -> createMultiOreDrops(ModBlocks.LINGITE_BLUE.get(),
                         ModItems.LINGITE_BLUE.get(), 6, 12));
