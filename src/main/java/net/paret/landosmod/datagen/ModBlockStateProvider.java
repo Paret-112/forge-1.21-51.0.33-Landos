@@ -1,15 +1,17 @@
 package net.paret.landosmod.datagen;
 
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.paret.landosmod.LandosMod;
 import net.paret.landosmod.block.ModBlocks;
+import net.paret.landosmod.block.custom.LampBlock;
 
 public class ModBlockStateProvider extends BlockStateProvider {
 
@@ -51,6 +53,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         blockItem(ModBlocks.JUNIPER_TRAPDOOR, "_bottom");
 
+        customLamp(ModBlocks.YELLOW_LAMP);
+        customLamp(ModBlocks.GREEN_LAMP);
+
     }
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
@@ -63,5 +68,20 @@ public class ModBlockStateProvider extends BlockStateProvider {
     private void blockItem(RegistryObject<? extends Block> blockRegistryObject, String appendix) {
         simpleBlockItem(blockRegistryObject.get(), new ModelFile.UncheckedModelFile("landosmod:block/" +
                 ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath() + appendix));
+    }
+    private void customLamp(RegistryObject<LampBlock> blockRegistryObject) {
+        String nameOn = ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath() + "_on";
+        String nameOff = ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath() + "_off";
+        getVariantBuilder(blockRegistryObject.get()).forAllStates(state -> {
+            if(state.getValue(LampBlock.ACTIVE)) {
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll(nameOn,
+                        ResourceLocation.fromNamespaceAndPath(LandosMod.MOD_ID, "block/" + nameOn)))};
+            } else {
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll(nameOff,
+                        ResourceLocation.fromNamespaceAndPath(LandosMod.MOD_ID, "block/" + nameOff)))};
+            }
+        });
+        simpleBlockItem(blockRegistryObject.get(), models().cubeAll(nameOn,
+                ResourceLocation.fromNamespaceAndPath(LandosMod.MOD_ID, "block/" + nameOn)));
     }
 }

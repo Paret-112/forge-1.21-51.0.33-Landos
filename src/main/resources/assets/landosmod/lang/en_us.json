@@ -27,12 +27,16 @@
   "block.landosmod.juniper_door": "Juniper Door",
   "block.landosmod.juniper_trapdoor": "Juniper Trapdoor",
 
+  "block.landosmod.yellow_lamp": "Yellow Lamp",
+  "block.landosmod.green_lamp": "Green Lamp",
 
   "block.landosmod.altar_block": "Altar Block",
 
   "block.landosmod.lingite_ore_blue": "Blue Lingite Ore",
   "block.landosmod.lingite_ore_green": "Green Lingite Ore",
   "block.landosmod.lingite_ore_purple": "Purple Lingite Ore",
+
+
 
   "creativetab.landosmod.landosmodtab": "Landos Mod"
 }

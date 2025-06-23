@@ -17,6 +17,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.paret.landosmod.LandosMod;
 import net.paret.landosmod.block.custom.AltarBlock;
+import net.paret.landosmod.block.custom.LampBlock;
 import net.paret.landosmod.item.ModItems;
 
 import java.util.function.Supplier;
@@ -79,6 +80,10 @@ public class ModBlocks {
     public static final RegistryObject<TrapDoorBlock> JUNIPER_TRAPDOOR = registerBlock("juniper_trapdoor",
             () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(ModBlocks.JUNIPER_PLANKS.get()).noOcclusion()));
 
+    public static final RegistryObject<LampBlock> YELLOW_LAMP = registerBlock("yellow_lamp",
+            () -> new LampBlock(BlockBehaviour.Properties.of().strength(2f).lightLevel(state -> state.getValue(LampBlock.ACTIVE) ? 15 : 0)));
+    public static final RegistryObject<LampBlock> GREEN_LAMP = registerBlock("green_lamp",
+            () -> new LampBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.YELLOW_LAMP.get())));
 
     public static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

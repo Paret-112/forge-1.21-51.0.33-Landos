@@ -1,5 +1,6 @@
-// 1.21	2025-06-20T11:58:22.1842886	Loot Tables
+// 1.21	2025-06-23T12:36:07.7687745	Loot Tables
 093f5932ae7f8363b26f680d80ceb86650c5b5ca data/landosmod/loot_table/blocks/altar_block.json
+fe4562e6f96b3c92e3a68b202400702586bdb6d8 data/landosmod/loot_table/blocks/green_lamp.json
 9836369c3cec229a8c2887a4999e64ca01905c39 data/landosmod/loot_table/blocks/juniper_button.json
 2e63278cbc8044e71b948d323b679c0e9b85946a data/landosmod/loot_table/blocks/juniper_door.json
 57a2dca8482c964bfc1a9716445d6923f63e5e7d data/landosmod/loot_table/blocks/juniper_fence.json
@@ -14,3 +15,4 @@ a9e0cabcbcf3c067206627365423db7a55119728 data/landosmod/loot_table/blocks/junipe
 faa632eedd938124bceea369143ed79305c5d32c data/landosmod/loot_table/blocks/lingite_ore_green.json
 b5f1fe2356ee14f44f6f33a2e49f23d90c9a820f data/landosmod/loot_table/blocks/lingite_ore_purple.json
 dbbbf5e1d5ef07032145f73d8c9f314f3aafba07 data/landosmod/loot_table/blocks/steel_block.json
+d89d55356985a3a41809d59b31e724efc10f620f data/landosmod/loot_table/blocks/yellow_lamp.json

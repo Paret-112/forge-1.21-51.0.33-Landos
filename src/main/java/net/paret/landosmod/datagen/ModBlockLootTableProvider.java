@@ -58,6 +58,9 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         this.add(ModBlocks.LINGITE_PURPLE.get(),
                 block -> createMultiOreDrops(ModBlocks.LINGITE_PURPLE.get(),
                         ModItems.LINGITE_PURPLE.get(), 1, 3));
+
+        dropSelf(ModBlocks.YELLOW_LAMP.get());
+        dropSelf(ModBlocks.GREEN_LAMP.get());
     }
 
     @Override

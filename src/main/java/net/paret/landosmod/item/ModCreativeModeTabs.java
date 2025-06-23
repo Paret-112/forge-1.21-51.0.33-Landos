@@ -41,6 +41,9 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModBlocks.JUNIPER_DOOR.get());
                         output.accept(ModBlocks.JUNIPER_TRAPDOOR.get());
+
+                        output.accept(ModBlocks.YELLOW_LAMP.get());
+                        output.accept(ModBlocks.GREEN_LAMP.get());
                     }).build()
     );
 

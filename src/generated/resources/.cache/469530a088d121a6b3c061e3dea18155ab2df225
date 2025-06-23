@@ -1,5 +1,6 @@
-// 1.21	2025-06-20T14:47:13.8117382	Block States: landosmod
+// 1.21	2025-06-23T12:36:07.7729955	Block States: landosmod
 523d3b3eefdbd85d6d374ae8df91c65af5c729c5 assets/landosmod/blockstates/altar_block.json
+04f68f7f8a6fb3d948257df337432a555473b6c3 assets/landosmod/blockstates/green_lamp.json
 5129bcdf5ab8c64d65eb1f46d498a8e8dcf970ad assets/landosmod/blockstates/juniper_button.json
 4d8e2a4cfa1974299655512a0be819a7d35cedfc assets/landosmod/blockstates/juniper_door.json
 11ac46a5e51711bfbb15a1c8f6ded3d9700b94b1 assets/landosmod/blockstates/juniper_fence.json
@@ -14,7 +15,10 @@ d0c7e5ffbb1d647307d50229258403582d3cbe83 assets/landosmod/blockstates/juniper_wa
 ddd01898902f772c908191524b8be874cbbb6eba assets/landosmod/blockstates/lingite_ore_green.json
 5e9e4600725071946aac1f826076691dc36324e1 assets/landosmod/blockstates/lingite_ore_purple.json
 cc2a8776dff226fe79ed0b73bd41bd3a513fc84f assets/landosmod/blockstates/steel_block.json
+5a72957e492256230337978ee665461a9a3744be assets/landosmod/blockstates/yellow_lamp.json
 d427f219400e087477660d3cf232fa3f9f62298e assets/landosmod/models/block/altar_block.json
+ab7913e6a2e3a0c2aacb6a387cd9fdd44b1dd6c7 assets/landosmod/models/block/green_lamp_off.json
+3edfde5350d63df6d38db83cd9bf920c337f7fbe assets/landosmod/models/block/green_lamp_on.json
 e875e4701523d2f42733315ce997ad5f6e3dcf9a assets/landosmod/models/block/juniper_button.json
 71b19dd66afbda626ba8eee9e7d856e7c511d892 assets/landosmod/models/block/juniper_button_pressed.json
 570111df8766f36e601877d10bc88ea561e5b171 assets/landosmod/models/block/juniper_door_bottom_left.json
@@ -49,7 +53,10 @@ f5c7a9500817e7249ef50a4b4d65165b59cc4e31 assets/landosmod/models/block/lingite_o
 994753cc434f99212602fafc0b7e8b9218c5490d assets/landosmod/models/block/lingite_ore_green.json
 f69bcc6e20973b362a3a8d13bed94c56e5da73ac assets/landosmod/models/block/lingite_ore_purple.json
 600425a9a6cb6806c290214ecda62bb4eb483a4f assets/landosmod/models/block/steel_block.json
+0166a31f062c01fb9b03b7aa22f806b664c0fc46 assets/landosmod/models/block/yellow_lamp_off.json
+9bc9b47655c75533906b7e9ba1610617a3b118dc assets/landosmod/models/block/yellow_lamp_on.json
 82c3891c2a03946e55e584eb1d914f188e2b0b3a assets/landosmod/models/item/altar_block.json
+190944640be02c7f26f3bfe766cf869c54de66ce assets/landosmod/models/item/green_lamp.json
 b70cda16e7d3ec9bb48314bf25e1f73f536ba748 assets/landosmod/models/item/juniper_fence_gate.json
 125d9c2334fb11a5913e7985bccc6b847c13851d assets/landosmod/models/item/juniper_planks.json
 159792a21b9b29893af83457a73a22a014a7f1f4 assets/landosmod/models/item/juniper_pressure_plate.json
@@ -60,3 +67,4 @@ ccb20d1220442fe817cedf63f5f902c3571b483e assets/landosmod/models/item/juniper_tr
 3b68feb8c6529b90710a0661cfbf27f98e2f480b assets/landosmod/models/item/lingite_ore_green.json
 ca3b161821086b56333f6e5f43230b9a4178ea04 assets/landosmod/models/item/lingite_ore_purple.json
 9814744a0b5876b06657cf49d032d0b603d465fe assets/landosmod/models/item/steel_block.json
+42d7596fff34c0c811d93a9c9a2e7ac1f45a4aaf assets/landosmod/models/item/yellow_lamp.json
